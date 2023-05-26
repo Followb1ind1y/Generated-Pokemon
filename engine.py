@@ -14,7 +14,7 @@ from tqdm.auto import tqdm, trange
 from torch import optim
 from torch.functional import F
 
-class Trainer:
+class DDPM_Trainer:
     def __init__(
             self, 
             dataset_path: str,
