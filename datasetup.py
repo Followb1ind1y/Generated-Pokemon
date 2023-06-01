@@ -1,7 +1,6 @@
 """
 Contains Image datasets for Image generation.
 """
-
 import os
 import numpy as np
 import torch
@@ -30,6 +29,10 @@ class PokemonDataset(torch.utils.data.Dataset):
         self.transform = transforms.Compose([
             transforms.Resize((self.image_size, self.image_size)),
             transforms.ToTensor(),
+            transforms.Normalize(
+                mean=[0.5 for _ in range(3)],
+                std=[0.5 for _ in range(3)],
+            ),
         ])
 
     def __len__(self) -> int:
@@ -38,5 +41,4 @@ class PokemonDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx: int) -> Tuple[torch.Tensor]:
         curr_img_dir = os.path.join(self.imgs_dir, self.imgs[idx])
         image = Image.open(curr_img_dir, mode='r').convert('RGB')
-
         return self.transform(image)
