@@ -20,7 +20,7 @@ The repository includes the necessary code and resources to train and utilize th
 
 ## **Dataset**
 
-All the training data used in this project are from [Pokemon Images Dataset](https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset). This dataset contains 819 pokemon images.
+All the training data used in this project are from [Pokemon Images Dataset](https://www.kaggle.com/datasets/kvpratama/pokemon-images-dataset). This dataset contains 819 pokemon images, white background in jpg format.
 
 ## **Demonstration**
 * **Pokemon Dataset:**
@@ -38,7 +38,7 @@ All the training data used in this project are from [Pokemon Images Dataset](htt
 >
 > [4] pytorch-ddpm `https://github.com/w86763777/pytorch-ddpm/tree/master`
 >
-> [5] Pytorch Diffusion `https://github.com/quickgrid/pytorch-diffusion
+> [5] Pytorch Diffusion `https://github.com/quickgrid/pytorch-diffusion`
 
 ## **Licence**
 
